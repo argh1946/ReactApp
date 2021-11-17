@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Test from './Components/Test';
 import Search from './Components/Search';
+import PropTest from './Components/PropTest';
 
 
 function App() {
@@ -13,6 +14,9 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
+
+       
+        <PropTest firstName={'alireza'} lastName={'gholami'} ></PropTest>
         <Test/>
         <Search/>
         <a
