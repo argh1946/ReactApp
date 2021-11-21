@@ -6,6 +6,7 @@ interface FullName {
 }
 
 
+
 const PropTest = (p:FullName) => {
     return (
         <div>
