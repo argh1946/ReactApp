@@ -1,3 +1,4 @@
+import { Input } from 'antd';
 import React, { useEffect, useState } from 'react'
 import ApiTest from '../api/ApiTest';
 import Posts from './Posts';
@@ -5,6 +6,7 @@ import Posts from './Posts';
 const Search = () => {
 
    console.log("test")
+   
 
 const [query, setQuery] = useState('');
 
@@ -30,6 +32,7 @@ if(isOk){
     return (
         <div>
             <input onChange={e=>setQuery(e.target.value)}  ></input>
+            <input type='text' value={query}></input>
         </div>
     )
 }
