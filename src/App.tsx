@@ -6,42 +6,35 @@ import Search from './Components/Search';
 import PropTest from './Components/PropTest';
 import Posts from './Components/Posts';
 import { Button, DatePicker, notification, Progress, Switch } from 'antd';
+import TsTest from './Components/TsTest';
 
 
 
 
 function App() {
-const onChange = ()=>{
-  openNotification();
-}
+  const onChange = () => {
+    openNotification();
+  }
 
 
-const openNotification = () => {
-  notification.open({
-    message: 'Notification Title',
-    description:
-      'This is the content of the notification. This is the content of the notification. This is the content of the notification.',
-    onClick: () => {
-      console.log('Notification Clicked!');
-    },
-  });
-};
+  const openNotification = () => {
+    notification.open({
+      message: 'Notification Title',
+      description:
+        'This is the content of the notification. This is the content of the notification. This is the content of the notification.',
+      onClick: () => {
+        console.log('Notification Clicked!');
+      },
+    });
+  };
 
   return (
     <div className="App">
-<Search/>
-
-      <Button type="primary">Button</Button>
-      <DatePicker />
-      <Switch defaultChecked onChange={onChange} />
-      <Progress percent={50} status="active" />
- <Posts/>
 
       
-       
-       
-       
-       
+      <Posts />
+
+
     </div>
   );
 }

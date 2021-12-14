@@ -3,8 +3,8 @@ import ApiTest from '../api/ApiTest';
 
 
 const Posts = () => {
-    const [dataItem, setdataItem] = useState([{id:0}]);
-  
+    const [dataItem, setdataItem] = useState([{ temperatureC: 0 }]);
+
     useEffect(() => {
         ApiTest((isOk: boolean, data: []) => {
             if (isOk) {
@@ -25,7 +25,7 @@ const Posts = () => {
         <div>
             <button onClick={() => click()}>test</button>
             {
-                dataItem.map(it => <div>{it.id}<br /></div>)
+                dataItem.map(it => <div>{it.temperatureC}<br /></div>)
             }
         </div>
     )
